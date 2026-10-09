@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Button</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-surface: #d9d9d9;
+      --color-on-surface: #ffffff;
+      --radius-button: 24px;
+      --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+    }
+
+    /* Figma node 1:7 — Button (360 × 120, radius 24, fill #d9d9d9, label Inter 24 white) */
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 360px;
+      height: 120px;
+      max-width: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: var(--radius-button);
+      background: var(--color-surface);
+      color: var(--color-on-surface);
+      font-family: var(--font-sans);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: normal;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .button:focus-visible {
+      outline: 3px solid #1a73e8;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <button class="button" type="button" data-node-id="1:7">Button</button>
+</body>
+</html>
